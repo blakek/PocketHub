@@ -1,0 +1,23 @@
+{
+  "name": "pockethub",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "standard --fix *.js | snazzy",
+    "start": "react-native start",
+    "start:android": "react-native run-android",
+    "start:ios": "react-native run-ios"
+  },
+  "dependencies": {
+    "react": "15.3.2",
+    "react-native": "0.34.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.3.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
