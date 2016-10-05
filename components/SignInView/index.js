@@ -17,8 +17,8 @@ export const SignInView = () => (
       button
       type='github'
       style={{
-        paddingLeft: 10,
-        paddingRight: 10
+        paddingLeft: 20,
+        paddingRight: 20
       }}
     />
   </View>
