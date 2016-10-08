@@ -1,26 +1,18 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { SocialIcon } from 'react-native-elements'
+import { LoginForm } from './LoginForm'
 
 export const SignInView = () => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
-      PocketHub
+      Welcome to PocketHub!
     </Text>
 
     <Text style={styles.instructions}>
       To get started, sign in using your GitHub account
     </Text>
 
-    <SocialIcon
-      title='Sign In With GitHub'
-      button
-      type='github'
-      style={{
-        paddingLeft: 20,
-        paddingRight: 20
-      }}
-    />
+    <LoginForm />
   </View>
 )
 
@@ -28,17 +20,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f3fcff'
+    alignItems: 'stretch',
+    backgroundColor: 'blueviolet'
   },
   welcome: {
+    color: '#fff',
     fontSize: 20,
+    fontWeight: 'bold',
     textAlign: 'center',
     margin: 10
   },
   instructions: {
     textAlign: 'center',
-    color: '#333',
+    color: '#fff',
     marginBottom: 25
   }
 })
